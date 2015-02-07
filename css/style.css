@@ -36,7 +36,6 @@ ul{margin:0; padding:0;}
 }
 
 .layerButton{
-    padding:12px;
     background:#F2F2F2;
     color:#4d4d4d;
 
@@ -46,6 +45,18 @@ ul{margin:0; padding:0;}
     box-sizing: border-box;
     width:75%;
     float:right;
+    height:40px;
+    position:relative;
+    text-align: center;
+}
+
+.layerButton span{
+    font-size: 1em;
+    top: 50%;
+    margin-top: -0.5em;
+    position: relative;
+    display: block;
+    pointer-events: none;
 }
 
 .currentLayer{
@@ -53,7 +64,6 @@ ul{margin:0; padding:0;}
 }
 
 .layerVisButton{
-    padding:12px;
     background:none no-repeat scroll 50% 50% #CCC;
     background-size:60%;
     cursor:pointer;
@@ -62,13 +72,13 @@ ul{margin:0; padding:0;}
     box-sizing: border-box;
     width:25%;
     float:left;
-    height: 44px;
+    height: 40px;
 }
 
 .lyrVisible{
-    
+
     background-image: url(../img/icon-eye.svg);
-    
+
 }
 
 
