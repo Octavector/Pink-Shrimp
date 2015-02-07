@@ -96,11 +96,7 @@ function layerHandler(e){
 
     if(RXP_Togg.test(e.target.id)){ //if clicked on a layer visibility toggle button
         //toggle eye icon
-        //new class toggle function should be used here
-        if(e.target.className.search("lyrVisible") >= 0 ){
-            e.target.className = "layerVisButton";
-        }
-        else{e.target.className = "layerVisButton lyrVisible";}
+        e.target.classList.toggle("lyrVisible");
 
         var lyrNum = RXP_lyrNum.exec(e.target.id)[0];
         toggleLayer(lyrNum);
