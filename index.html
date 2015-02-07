@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pink Shrimp | SVG Paint</title>
+        <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    </head>
+
+    <body>
+
+        <div id="Container">
+            <svg  id="svg" onmousedown="return false;">
+                <g></g> <!-- first layer (layer 0) is empty, this means that the index number of each layer in the array coincides with their layer ID's e.g. layerGroups[1] = Layer1, not Layer2.  -->
+                <g id="Layer1"></g>
+                <g id="Layer2"></g>
+                <g id="Layer3"></g>
+            </svg>
+        </div>
+
+        <div id="console">
+
+        </div>
+
+        <div id="Layers">
+            <div id="SetL3" class="layerButton">Set Active layer 3</div>
+            <div id="ToggleL3" class="layerVisButton lyrVisible">Vis3</div>
+            <div id="SetL2" class="layerButton">Set Active layer 2</div>
+            <div id="ToggleL2" class="layerVisButton lyrVisible">Vis2</div>
+            <div id="SetL1" class="layerButton currentLayer">Set Active layer 1</div>
+            <div id="ToggleL1" class="layerVisButton lyrVisible">Vis1</div>
+
+            <div id="currentLayer">
+            </div>
+        </div>
+
+        <div id="Options">
+            <form>
+                Opacity: 0<input id="OpacitySlide" type="range" min="1" max="10">100
+                Pen Size: 0<input id="PenSize" type="range" min="1" max="100">100
+            </form>
+            <div>
+                <ul id="Palette">
+                    <li id="red" style="background-color:rgb(62,69,76);"></li>
+                    <li id="blue" style="background-color:rgb(33,133,197);"></li>
+                    <li id="green" style="background-color:rgb(126,206,253);"></li>
+                    <li id="orange" style="background-color:rgb(255,246,229);"></li>
+                    <li id="yellow" style="background-color:rgb(255,127,102);"></li>
+                    <li id="yellow" style="background-color:rgb(16,91,99);"></li>
+                    <li id="yellow" style="background-color:rgb(255,250,213);"></li>
+                    <li id="yellow" style="background-color:rgb(255,211,78);"></li>
+                    <li id="yellow" style="background-color:rgb(219,158,54);"></li>
+                    <li id="yellow" style="background-color:rgb(189,73,50);"></li>
+
+                    <li id="yellow" style="background-color:#CCBE65;"></li>
+                    <li id="yellow" style="background-color:#768A5E;"></li>
+                    <li id="yellow" style="background-color:#425C50;"></li>
+                    <li id="yellow" style="background-color:#273C40;"></li>
+                    <li id="yellow" style="background-color:#151E2B;"></li>
+                </ul>
+            </div>
+            <div id="Undo">undo</div>
+        </div>
+
+        <script src="js/index.js"></script>
+
+    </body>
+
+</html>

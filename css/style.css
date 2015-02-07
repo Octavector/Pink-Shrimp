@@ -1,0 +1,64 @@
+#Container{ 
+    width:900px;
+    height:550px;
+    position:relative;
+    margin:0 auto;
+}
+
+svg{
+    border:1px solid black;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+li{
+    width:15px;
+    height:15px;
+    list-style:none;
+    float:left;
+    cursor:pointer;
+}
+
+ul{margin:0; padding:0;}
+
+#Layers{
+    width:200px;
+    position:absolute;
+    right:0;
+    top:0;
+    border:1px solid black;
+}
+
+.layerButton{
+    padding:5px;
+    background:#ccc;
+
+    cursor:pointer;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    width:75%;
+    float:right;
+}
+
+.currentLayer{
+    background:red;
+}
+
+.layerVisButton{
+    padding:5px;
+    background:#ccc;
+    cursor:pointer;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    width:25%;
+    float:left;
+}
+
+.lyrVisible{
+    background:red;
+}
+
+#currentLayer{height:50px;}
